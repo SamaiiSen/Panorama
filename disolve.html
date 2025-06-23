@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <style>
+    body {
+      background-color: rgb(255, 73, 73);
+    }
+    .fade-wrapper {
+      transition: opacity 0.7s;
+      opacity: 1;
+    }
+    .fade-wrapper.fade-out {
+      opacity: 0;
+    }
+  </style>
+</head>
+<body>
+  <nav class="no-fade">
+    <img class="no-fade" src="graphic/panorama.svg" alt="panorama" style="height:60px">
+    <ul class="poppins-light">
+      <li><a href="">Home</a></li>
+      <li><a href="">About</a></li>
+      <li><a href="">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="fade-wrapper" id="fadeContent">
+    <a onclick="dissolveToNextPage('lolcow')">lolcow</a>
+    <button onclick="dissolveToNextPage('index.html')">Go to Next Page</button>
+  </div>
+  <script>
+    function dissolveToNextPage(url) {
+      const wrapper = document.getElementById('fadeContent');
+      wrapper.classList.add('fade-out');
+      setTimeout(function() {
+        window.location.href = url;
+      }, 150); // Match the transition duration
+    }
+  </script>
+</body>
+</html>

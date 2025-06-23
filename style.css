@@ -1,0 +1,250 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeInAnimation 0.15s ease-in forwards;
+}
+@keyframes fadeInAnimation {
+  to { opacity: 1; }
+}
+
+body.fade-out .no-fade {
+  opacity: 1 !important;
+  transition: none !important;
+}
+
+body {
+	background: #111827;
+	color: white;
+	font-family: "Roboto Condensed Regular"
+}
+
+main {
+	max-width: 940px;
+	background: #1F2937;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 30px;
+}
+
+nav {
+	background: #2563EB;
+	height: 100px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	color: white
+}
+
+ul {
+	list-style: none;
+	display: flex;
+	width: 400px;
+	justify-content: space-between
+}
+
+a {
+	text-decoration-line:none;
+	color: white;
+	font-size: 24px;
+	
+}
+
+a:hover.link {
+	color: aqua;
+	animation-name: example;
+	animation-iteration-count: infinite;
+	animation-duration:6s;
+}
+
+@keyframes example {
+  0%   {color:aqua; font-size: 18px}
+  25%  {color:yellow;}
+  50%  {color:blue; font-size: 25px}
+  75%  {color:green;}
+  100% {color:aqua; font-size: 18px}
+}
+
+a.link {
+	text-decoration-line:none;
+	color: #10B981;
+	font-size: 18px;
+}
+
+h2 {
+	font-size: 59px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+h3 {
+	font-size: 30px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+p {
+	padding-bottom: 15px;
+}
+
+.img {
+	margin-left: auto;
+	margin-right:auto;
+	display: block;
+}
+
+.imgs {
+	margin-left: auto;
+	margin-right:auto;
+	display: block;
+	max-width: 455px;
+}
+
+.imgsr {
+	margin-left: auto;
+	margin-right:auto;
+	display: block;
+	max-width: 455px;
+}
+
+ul {
+	column-gap: 30px;
+}
+
+.img-hover-zoom {
+  width: 100%; /* Modify this according to your need */
+  overflow: hidden; /* Removing this will break the effects */
+}
+
+/* Colorize-zoom Container */
+.img-hover-zoom--colorize img {
+  transition: transform .5s, filter 1.5s ease-in-out;
+  filter: brightness(90%);
+}
+
+/* The Transformation */
+.img-hover-zoom--colorize:hover img {
+  filter: brightness(120%);
+  transform: scale(1.1);
+}
+
+.oswald- {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 18px;
+  font-style: normal;
+}
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
